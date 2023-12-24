@@ -41,8 +41,8 @@ scRemoveBatch = function(seurat.data,
   
   library(Seurat)
   cat("##################################\n")
-  print("R code from FamingZhao.") 
-  print("Welcome to cite our article <Integrated analysis of single-cell and bulk transcriptomics develops a robust neuroendocrine cell-intrinsic signature to predict prostate cancer progression>.")
+  cat("R code from FamingZhao.\n") 
+  cat("Welcome to cite our article <Integrated analysis of single-cell and bulk transcriptomics develops a robust neuroendocrine cell-intrinsic signature to predict prostate cancer progression>.\n")
   cat("##################################\n")
   if(methods %in% c("none")){
     seurat_int <- seurat.data %>% NormalizeData(verbose = F) %>%
