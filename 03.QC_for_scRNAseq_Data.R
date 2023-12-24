@@ -51,13 +51,13 @@ sc.QC.caculate = function(seurat.data = seurat.data,org = "human",cellcycle = F)
     ## 1.2.1 Mitochondrial ratio
     mito_genes=rownames(seurat.data)[grep("^MT-", rownames(seurat.data))]
     print("mito_genes:")
-    print(mito_genes)
+    cat(mito_genes)
     seurat.data <- PercentageFeatureSet(object = seurat.data, pattern = "^MT-",col.name = "percent.mt")
     
     ## 1.2.2 Ribosomal ratio
     ribo_genes=rownames(seurat.data)[grep("^RP[SL]", rownames(seurat.data),ignore.case = T)]
     print("ribo_genes:")
-    print(ribo_genes)
+    cat(ribo_genes)
     
     seurat.data <- PercentageFeatureSet(seurat.data,"^RP[SL]",col.name = "percent.ribo")
     print(summary(seurat.data@meta.data$percent.ribo))
@@ -65,7 +65,7 @@ sc.QC.caculate = function(seurat.data = seurat.data,org = "human",cellcycle = F)
     ## 1.2.3 Erythrocyte ratio
     hb_genes <- rownames(seurat.data)[grep("^HB[^(P)]", rownames(seurat.data),ignore.case = T)]
     print("hb_genes")
-    print(hb_genes)
+    cat(hb_genes)
     seurat.data=PercentageFeatureSet(seurat.data, "^HB[^(P)]", col.name = "percent.hb")
     print(summary(seurat.data@meta.data$percent.hb))
     
@@ -91,13 +91,13 @@ sc.QC.caculate = function(seurat.data = seurat.data,org = "human",cellcycle = F)
     ## 1.2.1 Mitochondrial Ratio
     mito_genes=rownames(seurat.data)[grep("^mt-", rownames(seurat.data))]
     print("mito_genes:")
-    print(mito_genes)
+    cat(mito_genes)
     seurat.data <- PercentageFeatureSet(object = seurat.data, pattern = "^mt-",col.name = "percent.mt")
     
     ## 1.2.2 Ribosomal ratio
     ribo_genes=rownames(seurat.data)[grep("^Rp[sl]", rownames(seurat.data),ignore.case = T)]
     print("ribo_genes:")
-    print(ribo_genes)
+    cat(ribo_genes)
     
     seurat.data <- PercentageFeatureSet(seurat.data,"^Rp[sl]",col.name = "percent.ribo")
     print(summary(seurat.data@meta.data$percent.ribo))
@@ -105,7 +105,7 @@ sc.QC.caculate = function(seurat.data = seurat.data,org = "human",cellcycle = F)
     ## 1.2.3 Erythrocyte ratio
     hb_genes <- rownames(seurat.data)[grep("^Hb[^(p)]", rownames(seurat.data),ignore.case = T)]
     print("hb_genes")
-    print(hb_genes)
+    cat(hb_genes)
     seurat.data=PercentageFeatureSet(seurat.data, "^Hb[^(p)]", col.name = "percent.hb")
     print(summary(seurat.data@meta.data$percent.hb))
     
