@@ -14,7 +14,7 @@ library(CytoTRACE)
 NE.data = read_rds("./Outdata/Step1.NE.cells.rds")
 meta.data = NE.data@meta.data
 
-#### 2. Run iCytoTRACE
+#### 2. Run CytoTRACE
 expr.data = as.my.matrix(GetAssayData(object = NE.data[["RNA"]],slot = "counts"))
 results <- CytoTRACE(mat = expr.data,ncores = 10)
 save(results,file= "./Output_Cyto/Step11.results.CytoTRACE.Rdata")
