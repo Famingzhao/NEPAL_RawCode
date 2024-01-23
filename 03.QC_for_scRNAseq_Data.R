@@ -27,7 +27,7 @@ table(seurat.data$predicted_doublet)
 sc.QC.caculate = function(seurat.data = seurat.data,org = "human",cellcycle = F){
   cat("##################################\n")
   cat("R code from FamingZhao.\n") 
-  cat("Welcome to cite our article <Integrated analysis of single-cell and bulk transcriptomics develops a robust neuroendocrine cell-intrinsic signature to predict prostate cancer progression>.\n")
+  cat("Welcome to cite our article <PMID: 38250042.Integrated analysis of single-cell and bulk transcriptomics develops a robust neuroendocrine cell-intrinsic signature to predict prostate cancer progression>.\n")
   cat("##################################\n")
   ###Runs Seurat for QC calculate
   ##Inputs:
