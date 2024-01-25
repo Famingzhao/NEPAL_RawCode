@@ -24,7 +24,7 @@ Key Laboratory of Environmental Health, Ministry of Education & Ministry of Envi
 
 Any technical question please contact Faming Zhao ([famingzhao@hust.edu.cn](famingzhao@hust.edu.cn)).
 
-copyright，ShengLab@HUST
+copyright, ShengLab@HUST
 
 
 
