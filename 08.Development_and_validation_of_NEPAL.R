@@ -58,7 +58,7 @@ seed <- 1
 #### 1.RSF ####
 ##################################
 set.seed(seed)
-fit <- rfsrc(NE_status~.,data = est_dd,
+RFS.fit <- rfsrc(NE_status~.,data = est_dd,
              ntree = 1000,
              nodesize = rf_nodesize,
              importance = T,
