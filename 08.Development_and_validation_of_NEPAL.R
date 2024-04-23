@@ -91,7 +91,7 @@ length(feature.gene)
 x1 <- as.matrix(est_dd[,pre_var])
 x2 <- est_dd$NE_status
 Enet.res.list = list()
-for (alpha in c(0.01, seq(0.01,1,0.1))) {
+for (alpha in c(0.01, seq(0.1,1,0.1))) {
   set.seed(seed)
   fit = cv.glmnet(x1, x2,family = "binomial",alpha=alpha,nfolds = 10)
   
