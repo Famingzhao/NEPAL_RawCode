@@ -233,7 +233,7 @@ cc <- data.frame(
 )%>%
   rownames_to_column('ID')
 cc$Model <- paste0('GBM')
-result <- rbind(result,cc)
+result.data <- rbind(result.data,cc)
 
 ##################################
 #### 6.SVM ####
